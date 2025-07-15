@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --original: #bcada3;
+    --invertido: #43525c;
+    --escalaDeCinzentos: #b0b0b0;
+    --claro: #e0dad7;
+    --escuro: #9b8a7e;
+    --saturado: #bfaca0;
+    --dessaturado: #baaea6;
+    --silver: #c0c0c0;
+    --cinzaEscuro: #a9a9a9;
+
+    --texto: #000;
+    --textoHover: var(--invertido);
+    --shadow: #43525c;
+
+    --sunState: 100%;
+    --sunRotate: 0deg;
+    
+    --moonState: 0;
+    --moonRotate: 180deg;
+    
+    background: var(--claro);
+ }
+
+:root.darkmode{
+    --texto: var(--claro);
+    --textoHover: #e0dad7;
+    --shadow: #e0dad780;
+    
+    --sunState: 0;
+    --sunRotate: 180deg;
+    
+    --moonState: 100%;
+    --moonRotate: 0deg;
+
+    background-color: var(--escuro);
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    color: var(--texto);
+    transition: background-color 250ms, color 250ms;
+}
+
+@keyframes rgb {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 200%;
+    }
+}
