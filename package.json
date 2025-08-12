@@ -6,6 +6,7 @@
     "start": "ng serve",
     "startprod": "ng serve --host=192.168.100.251",
     "build": "ng build",
+    "deploy": "ng build --configuration production --base-href '/TrabalhoWeb/' && npx angular-cli-ghpages --dir=dist/trabalho-web",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:TrabalhoWeb": "node dist/trabalho-web/server/server.mjs"
