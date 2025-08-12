@@ -10,6 +10,9 @@
     --silver: #c0c0c0;
     --cinzaEscuro: #a9a9a9;
 
+    --bg: var(--claro);
+    --bg2: var(--saturado);
+
     --texto: #000;
     --textoHover: var(--invertido);
     --shadow: #43525c;
@@ -20,7 +23,9 @@
     --moonState: 0;
     --moonRotate: 180deg;
     
-    background: var(--claro);
+    background: var(--bg);
+
+    padding-top: 96px;
  }
 
 :root.darkmode{
@@ -34,13 +39,15 @@
     --moonState: 100%;
     --moonRotate: 0deg;
 
-    background-color: var(--escuro);
+    --bg: var(--escuro);
+    --bg2: var(--dessaturado);
 }
 
 *{
     margin: 0;
     border: 0;
     padding: 0;
+    
 
     font-family: 'Times New Roman', Times, serif;
     font-weight: normal;
@@ -48,11 +55,11 @@
     transition: background-color 250ms, color 250ms;
 }
 
-@keyframes rgb {
-    0%{
-        background-position: 0%;
-    }
-    100%{
-        background-position: 200%;
-    }
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--textoHover);
+    text-shadow: 0 0 0.125em var(--textoHover);
 }

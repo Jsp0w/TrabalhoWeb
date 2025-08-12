@@ -1,1 +1,17 @@
-<p>projects works!</p>
+@for (data of dados2; track $index) {
+<div>
+    <h2>
+        {{data.name}}
+    </h2>
+    <p>Descrição:
+        @if(data.description != null){
+            {{data.description}}
+        }@else{
+            <span>
+                &lt;sem descirção!&gt;
+            </span>
+        }
+    </p>
+    <a href={{data.html_url}} target="_blank">Abrir repositório do projeto</a>
+</div>
+}

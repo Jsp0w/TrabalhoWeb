@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class HeaderComponent {
   ptbr = {
     textsList:['Home', 'Sobre mim', 'Projetos', 'Linkedin'],
-    linksList:['.', './aboutme', './projects', '#']
+    linksList:['.', './aboutme', './projects', 'https://br.linkedin.com/in/jo%C3%A3o-paulo-leires-lopes']
   }
 
   textsList = this.ptbr.textsList
@@ -20,8 +20,8 @@ export class HeaderComponent {
 
   constructor(private router: Router){
     let currentURL = this.router
-    console.log(currentURL)  
-    console.log(currentURL.url)
+    // console.log(currentURL)  
+    // console.log(currentURL.url)
     // this.underlined(currentURL)
   }
 

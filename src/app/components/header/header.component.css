@@ -1,9 +1,22 @@
 header{
     display: grid;
     grid-template: 66px / 50px 300px 1fr auto 50px;
+
+    
+    position: fixed;
+    top: 0;
+    
+    width: 100vw;
+
     padding: 20px 0 10px 0;
+    
     font-size: 1.5em;
     line-height: 22px;
+
+    background-color: var(--bg);
+
+    box-shadow: 0 1em 3em var(--bg);
+    
     /* font-size: 2em; */
 }
 
@@ -37,11 +50,6 @@ li, a{
     list-style: none;
     text-decoration: none;
     transition: text-shadow 500ms;
-}
-
-a:hover{
-    color: var(--textoHover);
-    text-shadow: 0 0 0.125em var(--textoHover);
 }
 
 button{
