@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: 'https://Jsp0w.github.io/TrabalhoWeb',
   supportedLocales: {
   "en-US": ""
 },
