@@ -1,6 +1,6 @@
 # TrabalhoWeb
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5, for my class of systems for internet in my university. the object of exercise has been create a web portfolio using the tolls that we alread knew.
 
 ## Development server
 
